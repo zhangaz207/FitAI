@@ -1,0 +1,117 @@
+.login-page {
+    height: 90vh;
+}
+
+.login-text {
+    font-size: 5em;
+    margin: 0vh;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+
+.login-input {
+    font-size: 3vh;
+    height: 7vh;
+    width: 25%;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    border-radius: 18px;
+    text-indent: 15px;
+    border-width: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 80%;
+}
+
+.login-input-invalid {
+    border-width: 3px;
+    border-color: red;
+    font-size: 3vh;
+    height: 7vh;
+    width: 25%;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    border-radius: 18px;
+    text-indent: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 80%;
+}
+
+.login-button {
+    margin-top: 5vh;
+    height: 7vh;
+    width: 25%;
+    border-radius: 18px;
+    margin-bottom: 0vh;
+    font-size: 2.8vh;
+    background-color: #4499cc;
+    color: white;
+    font-weight: bold;
+    border-width: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+    filter: brightness(80%);
+}
+
+.login-background {
+    background-image: url('../../../public/images/login-page-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.popup {
+    position: absolute;
+    margin-right: 10%;
+    display: none;
+    margin-left: 35%;
+    cursor: default;
+    animation: fadeIn 2s 1;
+    width: 100%;
+    height: 10%;
+}
+
+    .popup .popuptext {
+        text-align: center;
+        width: 20%;
+        background-color: #4499cc;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 100%;
+    }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .login-input,.login-input-invalid {
+        width: 35%;
+    }
+    .login-button {
+        width: 35%;
+    }
+}
+
+@media (max-width: 700px) {
+    .login-input,.login-input-invalid {
+        width: 80%;
+    }
+    .login-button {
+        width: 80%;
+    }
+}

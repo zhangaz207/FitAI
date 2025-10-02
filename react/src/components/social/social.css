@@ -1,0 +1,76 @@
+.social-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+}
+
+.social-graphs {
+    flex-grow: 1;
+}
+
+.social-logs {
+    flex-grow: 1;
+}
+
+.log-author {
+    background-color: white;
+    border-bottom: 2px #aaa solid ;
+    display: flex;
+    padding: 0px;
+    margin-bottom: 15px; 
+    transition: background-color 0.2s ease-in;
+    border-radius: 15px 15px 0px 0px
+}
+
+.log-profile {
+    padding: 15px;
+}
+
+.log-username {
+    color: #111;
+    font-size: 1.3em;
+}
+
+.log-name {
+    color: #757575;
+}
+
+a {
+    text-decoration: none;
+}
+
+.log-item {
+    max-height: max-content;
+    margin-bottom: 3%;
+
+}
+
+.social-log-list {
+    display: grid;
+    gap: 0%;
+    width: 100%;
+}
+
+.recharts-layer recharts-pie-sector {
+    transition: all 0.3s ease-out !important;
+    transform-origin: center center !important;
+}
+
+.log-header-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.log-header-section h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #2d3748;
+    margin: 0;
+}

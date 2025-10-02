@@ -1,0 +1,14 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "express": "npm start --prefix express",
+    "react": "npm start --prefix react",
+    "start": "concurrently \"npm run express\" \"npm run react\""
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "concurrently": "^9.1.2"
+  }
+}

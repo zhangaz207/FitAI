@@ -1,0 +1,70 @@
+.cover-page {
+    background-color: #eeeeee;
+    margin: 0;
+    height: 98vh;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    font-size: 10em;
+    
+}
+
+
+.cover-app-icon {
+    height: 20vh;
+    border-radius: 30px;
+}
+
+.cover-background {
+    background-image: url('../../../public/images/bfit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.cover-register-button {
+    height:7vh;
+    width: 16%;
+    margin: 15px;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 18px;
+    border-width: 0;
+    font-size: 1.2em;
+}
+
+.cover-register-button:hover {
+    background-color: #076500;
+}
+
+.cover-login-button {
+    height: 7vh;
+    width: 16%;
+    margin: 15px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 18px;
+    border-width: 0;
+    font-size: 1.2em;
+}
+
+.cover-login-button:hover {
+    background-color: #dddddd;
+}
+
+@media (max-width: 2500px) {
+    .cover-register-button, .cover-login-button {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .cover-register-button, .cover-login-button {
+        width: 50%;
+    }
+}
+

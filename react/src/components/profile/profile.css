@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --stanwidth: 15rem;
+  --stanheight: 3rem;
+  --largefontsize: 1rem;
+  --stanbradius: 0.5rem;
+  --stanshadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  --buttonback: #4299e1;
+  --buttonshadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+  --gap: 1rem;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #f6f9fc 0%, #fdfvff 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-section h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #2d3748;
+  margin: 0;
+}
+
+.home-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.profile-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.profile {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.profile label {
+  display: block;
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.profile .val {
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.profile input,
+.profile select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile input:focus,
+.profile select:focus {
+  outline: none;
+  border-color: var(--buttonback);
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.profile-dropdown-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.editbutton,
+.savebutton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.editbutton {
+  background: white;
+  color: var(--buttonback);
+  border: 2px solid var(--buttonback);
+}
+
+.savebutton {
+  background: var(--buttonback);
+  color: white;
+}
+
+.editbutton:hover,
+.savebutton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(66, 153, 225, 0.1);
+}
+
+.logout {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: #e53e3e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.logout:hover {
+  background: #c53030;
+  transform: translateY(-1px);
+}
+
+.followsection {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.toggleFollowButton {
+  width: 50%;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggleFollowButton h3 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.toggleFollowButton:hover {
+  background: #f7fafc;
+}
+
+.followList {
+  display: block;
+  padding: 2rem;
+}
+
+#follow {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#follow li {
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s;
+  color: #090909;
+}
+
+#follow li:hover {
+  transform: translateX(4px);
+  border-color: var(--buttonback);
+  box-shadow: 0 4px 6px rgba(66, 153, 225, 0.1);
+}
+
+#follow li a {
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#follow li a i {
+  color: #718096;
+  font-style: normal;
+  margin-left: 0.5rem;
+}
+
+.popup {
+  position: fixed;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: none;
+  margin-left: 38%;
+  align-items: center;
+  justify-content: center;
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 6px rgba(56, 161, 105, 0.2);
+  max-width: 20%;
+  font-size: 0.95rem;
+  text-align: center;
+  
+}
+
+.popup .popuptext {
+  margin: 0;
+  padding: 20;
+  display: inline-block;
+  width: 100%;
+  min-height: 27px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.popup-home {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #48bb78;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  animation: slideIn 0.3s ease-out;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1rem;
+  }
+  
+  .welcome-section {
+    padding: 1.5rem;
+  }
+
+  .profile-section {
+    padding: 1.5rem;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .editbutton,
+  .savebutton {
+    width: 100%;
+  }
+}
+
+@keyframes swipe-left {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(-100px);
+        opacity: 0%
+    }
+}
+
+@keyframes swipe-right {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0%
+    }
+}
+
+@keyframes toggleFollow {
+    0% {
+        border-bottom: solid 0.5em white;
+    }
+
+    100% {
+        border-bottom: solid 0.5em #66aaee;
+    }
+}

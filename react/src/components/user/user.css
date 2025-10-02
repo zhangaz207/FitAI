@@ -1,0 +1,43 @@
+.user-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+}
+
+.user-info-section {
+    flex-grow: 1;
+    border-right: solid 1px #eee;
+    margin-right: 1em;
+    padding: 1em;
+    max-width: 450px;
+}
+
+.user-log-section {
+    flex-grow: 1;
+}
+
+.user-profile-pic {
+    width: 250px;
+    object-fit: cover;
+}
+.user-name {
+    text-align: left;
+    width: 100%;
+}
+
+.follow-btn {
+    background: #ecf0f1;
+    color: #2c3e50;
+    transition: background 0.2s ease-in;
+}
+
+.follow-btn:hover {
+    background: #d5dbdb;
+}
+
+.follow-btn.followed {
+    background: green;
+    color: white;
+    transition: background 0.2s ease-in;
+}

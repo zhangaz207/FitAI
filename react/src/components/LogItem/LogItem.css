@@ -1,0 +1,218 @@
+/* logitem.css */
+.log-item {
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.log-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* View Mode Styles */
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.log-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.log-author {
+    display: flex;
+    border-bottom: 2px;
+}
+
+.timestamp {
+  color: #95a5a6;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.log-details {
+  margin: 1rem 0;
+}
+
+.log-notes {
+  margin: 1rem 0;
+  color: #34495e;
+  line-height: 1.6;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.log-meta {
+  display: flex;
+  gap: 1.5rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.log-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3498db;
+  font-weight: 500;
+}
+
+/* Edit Mode Styles */
+.edit-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.form-group select,
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.time-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+input[type="number"] {
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 100px;
+}
+
+/* Buttons */
+.log-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.edit-btn {
+  background: #3498db;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #2980b9;
+}
+
+.react-btn {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.react-btn:hover {
+  background: #dfe6e9;
+}
+
+.react-btn.reacted {
+  background: #e74c3c;
+  color: white;
+}
+
+.react-count {
+  margin-left: 0.3rem;
+  font-weight: normal;
+}
+
+.save-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #27ae60;
+}
+
+.cancel-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .log-item {
+    padding: 1.25rem;
+  }
+  
+  .time-group {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .log-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .log-actions {
+    flex-wrap: wrap;
+  }
+  
+  button {
+    flex-grow: 1;
+  }
+}

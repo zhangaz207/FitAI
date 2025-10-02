@@ -1,0 +1,126 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: white;
+    color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    height:  8vh;
+}
+
+
+nav .title {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: black; 
+    text-decoration: none; 
+    margin: 0 1rem;
+    font-family: 'Lato', sans-serif; 
+}
+
+
+.logo-image {
+    width: auto;
+    height: 3rem; 
+}
+
+.sitename{
+    margin-left: 30px; 
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    display:flex;
+    color: black;
+}
+
+.links{
+    display: flex; 
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 22.5px;
+}
+
+.link-container {
+    font: inherit;
+    margin: 0px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    border: 0;
+    border-top: solid #dddddd 4.5px;
+    background-color: white;
+    cursor: pointer;
+    transition: scale 0.3s ease;
+}
+
+
+.active-link-container {
+    font: inherit;
+    margin: 0px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    border: 0;
+    border-top: solid black 4.5px;
+    background-color: white;
+    cursor: pointer;
+    transition: scale 0.3s ease;
+    animation: active-indicator 0.5s 1;
+}
+
+    .link-container:hover, .active-link-container:hover {
+        filter: brightness(97%);
+        scale: 110%;
+    }
+
+.home {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;      
+    font-weight: 300;
+    text-align: center;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    display: flex;
+}
+
+.hover {
+    animation: hoverAnimation 0.75s 2;
+    animation-timing-function: ease-out;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 22.5px;
+    margin-right: 22.5px;
+    display: flex;
+}
+
+
+
+@keyframes hoverAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes active-indicator {
+    0% {
+        border-top: solid white 4.5px;
+    }
+    100% {
+        border-top: solid black 4.5px;
+    }
+}
