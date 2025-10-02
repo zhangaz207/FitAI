@@ -64,4 +64,4 @@ To test the program, we recommend importing some user data to explore the full f
 - Google Gemini API
 
 ## Authors
-This app was developed as a final project UCLA CS35L in Spring 2025 by: Andrew Zhang, Herman Guo, and Jonathan Pearson
+This app was developed by: Andrew Zhang, Herman Guo, and Jonathan Pearson
